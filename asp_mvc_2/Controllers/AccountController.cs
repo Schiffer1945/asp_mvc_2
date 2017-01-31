@@ -22,6 +22,7 @@ namespace asp_mvc_2.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 UserManager UM = new UserManager();
                 if (!UM.IsLoginNameExist(USV.LoginName))
                 {
